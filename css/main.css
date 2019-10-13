@@ -107,34 +107,66 @@ footer {
   flex-flow: row;
 }
 
+.content-wrapper {
+  width: 96%;
+}
+
 /* Header */
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex-flow: row;
+  width: 95%;
+}
+
+/* Footer */
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row;
+footer p {
+  margin: 0;
 }
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  flex-flow: row;
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
-/* Footer */
 footer .social {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 footer .social-icons {
@@ -142,6 +174,11 @@ footer .social-icons {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
 }
 /* END Base Header - Footer Styles */
 
@@ -162,7 +199,7 @@ aside {
 }
 
 .hero-area #headline {
-
+  margin: 0 5%;
 }
 
 .hero-area #hero-img {
@@ -170,13 +207,26 @@ aside {
 }
 
 /* Newsletter */
+#newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 0 5%;
+}
 
 /* Features */
 #features {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row;
+  flex-flow: row wrap;
+  width: 95%;
+  margin: 0 5%;
+}
+
+#features p {
+  margin: 0;
 }
 
 .features-item-description {
@@ -192,6 +242,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row;
+  margin: 0 2%;
+}
+
+.review h3 {
+  width: 53%;
 }
 /* END Main Page */
 

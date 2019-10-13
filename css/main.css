@@ -257,6 +257,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row;
+  margin: 0 5%;
 }
 
 /* Contact Section */
@@ -265,6 +266,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row;
+  margin: 0 5%;
 }
 /* END About */
 
@@ -281,6 +283,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row;
+  margin: 0 5%;
 }
 /* END FAQ */
 
@@ -373,17 +376,15 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles */
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles */
 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

@@ -378,7 +378,134 @@ aside {
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
+  /* Header */
+  header {
+    justify-content: center;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: row;
+    width: 90%;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+  .hero-area {
+    justify-content: flex-start;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+    width: 90%;
+    margin: 0;
+   }
+
+   /* Features */
+  #features article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 40%;
+  }
+
+  #features .features-item-description {
+    width: 40%;
+  }
+
+  /* Reviews */
+  .reviews article{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+
+  .reviews article div {
+    width: 50%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 95%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  faq-content {
+    flex-basis: 50%;
+  }
+
+  /* ABOUT PAGE */
+  .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission-content p {
+        width: 50%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        width: 100%;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* FAQ */
+      .faq .content-wrapper {
+        justify-content: space-between;
+    }
+
+    .faq-content {
+        flex-basis: 40%;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {

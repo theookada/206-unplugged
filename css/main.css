@@ -106,7 +106,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
-    background: #000;
+    background: #202322;
     color: #fff;
 }
 
@@ -120,15 +120,21 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 h2 {
   font-family : 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: normal;
 }
 
 h3,
 h4 {
   font-family : 'Poppins', sans-serif;
   font-size: 1.25em;
+  font-weight: normal;
 }
 
 p {
@@ -226,6 +232,7 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 
 /* -------------- Mobile Styles ----------- */
@@ -236,6 +243,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("img/jake-melara-30679-unsplash.jpg")
+  background-color: #1A2C2A;
 }
 
 /* Aside */
@@ -245,6 +254,32 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -253,6 +288,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("img/rawpixel-800820-unsplash1.jpg");
 }
 
 .features h2 {
@@ -269,6 +305,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .features p {
@@ -281,6 +318,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2A423A;
 }
 
 .reviews h2 {
@@ -301,6 +339,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 .contact-section {
@@ -308,6 +347,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #2A423A;
 }
 
 .contact-content p {
@@ -323,6 +363,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 .faq .content-wrapper {
@@ -564,7 +605,7 @@ aside {
 
      /* Hero */
     .hero-area h1 {
-        width: 70%;
+        width: 60%;
     }
 
     /* Aside */

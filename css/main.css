@@ -143,11 +143,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -181,6 +181,14 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -193,6 +201,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-family : 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -243,7 +253,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #1A2C2A;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #1A2C2A;
+  background-size: cover;
 }
 
 /* Aside */
@@ -287,6 +298,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #1A2C2A;
+  background-size: cover;
 }
 
 .features h2 {
@@ -488,8 +501,12 @@ input[type=button] {
       justify-content: space-between;
     }
 
+    header figure {
+      width: 30%;
+    }
+
     header nav {
-      width: 20%;
+      width: 25%;
     }
 
     header nav ul {
@@ -500,6 +517,15 @@ input[type=button] {
       display: none;
     }
 /* Hero Area */
+.hero-area {
+  align-items: flex-start;
+}
+
+.hero-area h1 {
+  width: 70%;
+}
+
+    align-items: flex-start;
 
 /* Aside */
     aside .content-wrapper {
@@ -596,7 +622,7 @@ input[type=button] {
   }
 
   @media only screen and (min-width:1200px) {
-    /* Desktop Styles */
+/* Desktop Styles */
     .content-wrapper {
          max-width: 960px;
     }
@@ -608,7 +634,7 @@ input[type=button] {
 
     /* Aside */
     aside .content-wrapper {
-        justify-content: row;
+        justify-content: row nowrap;
     }
 
     aside .content-wrapper .form-description,
@@ -626,6 +652,7 @@ input[type=button] {
     }
 
     /* Reviews */
+
     .reviews article div {
         width: 50%;
     }

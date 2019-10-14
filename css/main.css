@@ -243,7 +243,6 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("img/jake-melara-30679-unsplash.jpg")
   background-color: #1A2C2A;
 }
 
@@ -288,7 +287,6 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("img/rawpixel-800820-unsplash1.jpg");
 }
 
 .features h2 {

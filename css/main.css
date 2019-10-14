@@ -96,23 +96,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 /* General Styles */
 
 html {
-     font-size: 16px;
+	font-size: 16px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    text-align: left;
-    background: #202322;
-    color: #fff;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -120,38 +120,35 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-weight: normal;
-}
-
 h2 {
-  font-family : 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
-  font-weight: normal;
 }
 
 h3,
 h4 {
-  font-family : 'Poppins', sans-serif;
-  font-size: 1.25em;
-  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
   font-size: .875em;
-  line-height: 1.2em;
+  line-height: 1.285;
 }
 
 img {
-  width: 100%;
+ width: 100%;
 }
 
 figure {
-  margin: 0;
+ margin: 0;
 }
 
 address {
-  font-style: normal;
+ font-style: normal;
 }
 
 .content-wrapper {
@@ -163,6 +160,7 @@ address {
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,44 +172,51 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
-  width: 100%;
+  background: #3a3a3a;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  font-family : 'Poppins', sans-serif;
-  text-transform: uppercase;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -242,32 +247,38 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
-  text-align: center;
 }
 
-/* -------------- Mobile Styles ----------- */
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #1A2C2A;
-  background-size: cover;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
 }
 
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
 }
 
-aside .form {
+aside .form{
   margin-top: 30px;
 }
 
@@ -295,11 +306,12 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #1A2C2A;
-  background-size: cover;
 }
 
 .features h2 {
@@ -316,24 +328,25 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  text-align: center;
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #2A423A;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -346,19 +359,19 @@ input[type=button] {
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #2A423A;
 }
 
 .contact-content p {
@@ -370,11 +383,11 @@ input[type=button] {
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
 }
 
 .faq .content-wrapper {
@@ -387,10 +400,16 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -482,207 +501,280 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width:768px) {
-/*Tablet styles*/
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
 
-/* General styles */
-    .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-    }
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
-/* Header */
-    header {
-      justify-content: space-around;
-    }
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
 
-    header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
-    }
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
 
-    header figure {
-      width: 30%;
-    }
+  /* Header */
+  header {
+    justify-content: space-around;
+  }
 
-    header nav {
-      width: 25%;
-    }
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    header nav ul {
-      justify-content: space-between;
-    }
+  header figure {
+    width: 30%;
+  }
 
-    .header-divider {
-      display: none;
-    }
-/* Hero Area */
-.hero-area {
-  align-items: flex-start;
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+  /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
 }
 
-.hero-area h1 {
-  width: 70%;
-}
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
 
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 35%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features h2 {
+    margin: 0 20px 20px 0;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 90%;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 40%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-
-/* Aside */
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-    }
-
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 35%;
-      margin: 0;
-    }
-
-/* Features */
-    .features article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
-    }
-
-    .features .features-item-description {
-      width: 50%;
-    }
-
-/* Reviews */
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .reviews article div {
-      width: 49%;
-    }
-
-/* Footer */
-    footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    footer .contact {
-      margin-bottom: 0;
-    }
-
-    footer .copyright {
-      width: 100%;
-    }
-
-/* About Page */
-
-    .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .mission-content p {
-      width: 40%;
-    }
-
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
-
-    .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-/*     FAQ Page      */
-
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-
-    .faq-content {
-      flex-basis: 40%;
-    }
-
-    .faq h2 {
-      width: 100%;
-    }
   }
 
-  @media only screen and (min-width:1200px) {
-/* Desktop Styles */
-    .content-wrapper {
-         max-width: 960px;
-    }
-
-     /* Hero */
-    .hero-area h1 {
-        width: 60%;
-    }
-
-    /* Aside */
-    aside .content-wrapper {
-        justify-content: row nowrap;
-    }
-
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-        width: 25%;
-    }
-
-    /* Features */
-    .features h2 {
-        width: 70%;
-    }
-
-    .features article {
-        flex-basis: 30%;
-    }
-
-    /* Reviews */
-
-    .reviews article div {
-        width: 50%;
-    }
-
-/* About Page */
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width: 72%;
-    }
-
-    .contact-section .content-wrapper h2 {
-        margin-bottom: 3%;
-    }
-
-
-/* FAQ Page */
-    .faq h2 {
-        width: 100%;
-    }
-
-    .faq-content {
-        flex-basis: 50%;
-    }
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 60%;
+}
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 70%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 100%;
+      font-size: 3em;
+  }
+
+  .contact-section .content-wrapper h2 {
+    margin-bottom: 40px;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+
+  .faq-content {
+    flex-basis: 35%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 }
 
 /* ==========================================================================

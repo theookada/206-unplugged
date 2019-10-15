@@ -312,6 +312,11 @@ input[type=button] {
   margin: 30px 0;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -533,6 +538,7 @@ input[type=button] {
     .header-divider {
       display: none;
     }
+
 /* Hero Area */
 .hero-area {
   align-items: flex-start;

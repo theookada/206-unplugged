@@ -241,9 +241,20 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.4em;
 }
 
 footer .copyright {
@@ -632,7 +643,6 @@ input[type=button] {
     margin: 100px 0;
   }
 
-
   footer .footer-content {
     display: flex;
     justify-content: space-between;
@@ -650,7 +660,12 @@ input[type=button] {
   }
 
   footer p {
-      line-height: 1.285;
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -799,6 +814,13 @@ input[type=button] {
       line-height: 1;
   }
 }
+
+/* FOOTER */
+
+footer .social-icons p i {
+  font-size: 1.2em;
+}
+
 
 /* ==========================================================================
    Print styles.
